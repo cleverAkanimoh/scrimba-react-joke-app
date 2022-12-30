@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import Jokes from './Components/Jokes'
+import Jokes from './Components/Jokes';
+import data from './Components/Data';
 
-function App() {
+const App = () => {
   const [jokes, setJokes] = useState(data);
 
   return (
-    <div className="App">
+    <main>
       <Jokes />
-    </div>
+    </main>
   )
 }
 
