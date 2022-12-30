@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <main>
-      <h1>Jokes App</h1>
+      <h1>Jokes</h1>
       <Jokes jokes={jokes} />
     </main>
   )
