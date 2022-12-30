@@ -1,8 +1,16 @@
-const Jokes = ({jokes}) => {
+const Jokes = ({ jokes }) => {
     return (
-        <article id="jokes">
-            <h2>Jokes Component</h2>
-        </article>
+        <section id="jokes--container">
+            {jokes.map(joke => {
+            const { id, setup, punchline } = joke;
+
+                return <article key={id} id="jokes">
+                        <h3>{setup}</h3>
+                        <p>{punchline}</p>
+                        <hr />
+                    </article>}
+            )}
+        </section>
     )
 }
 
