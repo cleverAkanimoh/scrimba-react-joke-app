@@ -12,4 +12,25 @@
 
 main {
   width: 300px;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 2;
+  text-align: center;
+  color: red;
+  position: sticky;
+}
+
+.jokes {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    width: 600px;
+    padding: 2rem 1rem;
+    gap: 20px
+  }
 }

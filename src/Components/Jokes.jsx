@@ -4,7 +4,7 @@ const Jokes = ({ jokes }) => {
             {jokes.map(joke => {
                 const { id, setup, punchline } = joke;
 
-                return <article key={id} id="jokes">
+                return <article key={id} className="jokes">
                     {setup && <h3>Setup: {setup}</h3>}
                     <p>Punchline: {punchline}</p>
                     <hr />
