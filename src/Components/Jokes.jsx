@@ -5,8 +5,8 @@ const Jokes = ({ jokes }) => {
                 const { id, setup, punchline } = joke;
 
                 return <article key={id} id="jokes">
-                    <h3>{setup}</h3>
-                    <p>{punchline}</p>
+                    {setup && <h3>Setup: {setup}</h3>}
+                    <p>Punchline: {punchline}</p>
                     <hr />
                 </article>
             }
